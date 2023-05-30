@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import CodeEditorWindow from './components/CodeEditorWindow';
+import "./App.css";
+import Landing from "./components/Landing";
 
 function App() {
   return (
     <div className="App">
-      <CodeEditorWindow />
+      <Landing />
     </div>
   );
 }

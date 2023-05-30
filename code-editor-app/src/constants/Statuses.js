@@ -1,58 +1,58 @@
-export const Statuses = [
+export const statuses = [
   {
     id: 1,
-    value: "In Queue",
+    description: "In Queue",
   },
   {
     id: 2,
-    value: "Running",
+    description: "Running",
   },
   {
     id: 3,
-    value: "Success",
+    description: "Success",
   },
   {
     id: 4,
-    value: "Wrong Answer",
+    description: "Wrong Answer",
   },
   {
     id: 5,
-    value: "Time Limit Exceeded",
+    description: "Time Limit Exceeded",
   },
   {
     id: 6,
-    value: "Compilation Error",
+    description: "Compilation Error",
   },
   {
     id: 7,
-    value: "Runtime Error (SIGSEGV)",
+    description: "Runtime Error (SIGSEGV)",
   },
   {
     id: 8,
-    value: "Runtime Error (SIGXFSZ)",
+    description: "Runtime Error (SIGXFSZ)",
   },
   {
     id: 9,
-    value: "Runtime Error (SIGFPE)",
+    description: "Runtime Error (SIGFPE)",
   },
   {
     id: 10,
-    value: "Runtime Error (SIGABRT)",
+    description: "Runtime Error (SIGABRT)",
   },
   {
     id: 11,
-    value: "Runtime Error (NZEC)",
+    description: "Runtime Error (NZEC)",
   },
   {
     id: 12,
-    value: "Runtime Error (Other)",
+    description: "Runtime Error (Other)",
   },
   {
     id: 13,
-    value: "Internal Error",
+    description: "Internal Error",
   },
   {
     id: 14,
-    value: "Exec Format Error",
+    description: "Exec Format Error",
   },
 ];

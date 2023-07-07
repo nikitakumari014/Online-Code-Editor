@@ -9,6 +9,12 @@ const OutputDetails = ({ outputDetails }) => {
           {outputDetails?.status?.description}
         </span>
       </p>
+      <p className="text-sm">
+        Time:{" "}
+        <span className="font-semibold px-2 py-1 rounded-md bg-gray-100">
+          {outputDetails?.time}
+        </span>
+      </p>
     </div>
   );
 };

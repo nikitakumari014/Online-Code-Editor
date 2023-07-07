@@ -11,11 +11,11 @@ const CodeEditorWindow = ({ onChange, language, code, theme }) => {
   };
 
   return (
-    <div className="overlay rounded-md overflow-hidden w-full h-full">
+    <div className="rounded-md w-full h-full">
       <Editor
         height="85vh"
         width={`99%`}
-        language={language || "C++"}
+        language={language || "C"}
         value={value}
         theme={theme}
         defaultValue="// some comment"

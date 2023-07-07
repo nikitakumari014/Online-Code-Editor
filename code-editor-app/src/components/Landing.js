@@ -5,8 +5,8 @@ import { classnames } from "../utils/general";
 import { languageOptions } from "../constants/languageOptions";
 import { defineTheme } from "../lib/defineTheme";
 import useKeyPress from "../hooks/useKeyPress";
+// import CustomInput from "./CustomInput";
 import OutputWindow from "./OutputWindow";
-import CustomInput from "./CustomInput";
 import OutputDetails from "./OutputDetails";
 import ThemeDropdown from "./ThemeDropdown";
 import LanguagesDropdown from "./LanguagesDropdown";
@@ -21,8 +21,8 @@ int main()
 
 const Landing = () => {
   const [code, setCode] = useState(CDefault);
-  const [customInput, setCustomInput] = useState("");
   const [outputDetails, setOutputDetails] = useState(null);
+  // const [customInput, setCustomInput] = useState("");
   const [processing, setProcessing] = useState(null);
   const [theme, setTheme] = useState("cobalt");
   const [language, setLanguage] = useState(languageOptions[0]);
@@ -58,7 +58,7 @@ const Landing = () => {
     const formData = {
       language_id: language.id,
       source_code: btoa(code),
-      stdin: btoa(customInput),
+      // stdin: btoa(customInput),
     };
     const options = {
       method: "POST",
@@ -140,7 +140,7 @@ const Landing = () => {
   }, []);
   return (
     <>
-      <div className="h-4 w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"></div>
+      <div className="h-4 w-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
       <div className="flex flex-row">
         <div className="px-4 py-2">
           <LanguagesDropdown onSelectChange={onSelectChange} />
@@ -162,19 +162,15 @@ const Landing = () => {
         <div className="right-container flex flex-shrink-0 w-[30%] flex-col">
           <OutputWindow outputDetails={outputDetails} />
           <div className="flex flex-col items-end">
-            <CustomInput
-              customInput={customInput}
-              setCustomInput={setCustomInput}
-            />
             <button
               onClick={handleCompile}
               disabled={!code}
               className={classnames(
-                "mt-4 border-2 border-black z-10 rounded-md shadow-[5px_5px_0px_0px_rgba(0,0,0)] px-4 py-2 hover:shadow transition duration-200 bg-white flex-shrink-0",
+                "mt-4 border-2 border-white px-4 py-2 bg-sky-200 flex-shrink-0",
                 !code ? "opacity-50" : ""
               )}
             >
-              {processing ? "Running.." : "Run Code"}
+              {processing ? "Running" : "Run"}
             </button>
           </div>
           {outputDetails && <OutputDetails outputDetails={outputDetails} />}

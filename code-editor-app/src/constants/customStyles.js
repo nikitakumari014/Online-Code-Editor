@@ -2,20 +2,15 @@ export const customStyles = {
   control: (styles) => ({
     ...styles,
     width: "100%",
-    maxWidth: "14rem",
-    minWidth: "12rem",
-    borderRadius: "5px",
+    maxWidth: "10rem",
+    minWidth: "7rem",
+    borderRadius: "3px",
     color: "#000",
     fontSize: "0.8rem",
-    lineHeight: "1.75rem",
-    backgroundColor: "#FFFFFF",
+    lineHeight: "1.5rem",
+    backgroundColor: "#89CFF0", //color of the styles dropdown button
     cursor: "pointer",
-    border: "2px solid #000000",
-    boxShadow: "5px 5px 0px 0px rgba(0,0,0);",
-    ":hover": {
-      border: "2px solid #000000",
-      boxShadow: "none",
-    },
+    border: "1px solid #FFFFF",
   }),
   option: (styles) => {
     return {
@@ -24,9 +19,9 @@ export const customStyles = {
       fontSize: "0.8rem",
       lineHeight: "1.75rem",
       width: "100%",
-      background: "#fff",
+      background: "#fff", //color of the options that comes when you click on dropdown
       ":hover": {
-        backgroundColor: "rgb(243 244 246)",
+        backgroundColor: "#808080",
         color: "#000",
         cursor: "pointer",
       },
@@ -36,10 +31,9 @@ export const customStyles = {
     return {
       ...styles,
       backgroundColor: "#fff",
-      maxWidth: "14rem",
-      border: "2px solid #000000",
-      borderRadius: "5px",
-      boxShadow: "5px 5px 0px 0px rgba(0,0,0);",
+      maxWidth: "12rem",
+      border: "2px #FFFFFF",
+      borderRadius: "2px",
     };
   },
 

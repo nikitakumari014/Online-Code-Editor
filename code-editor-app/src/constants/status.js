@@ -1,4 +1,4 @@
-export const statuses = [
+export const status = [
   {
     id: 1,
     description: "In Queue",
@@ -9,7 +9,7 @@ export const statuses = [
   },
   {
     id: 3,
-    description: "Success",
+    description: "Accepted",
   },
   {
     id: 4,

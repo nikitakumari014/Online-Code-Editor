@@ -140,14 +140,30 @@ const Landing = () => {
   }, []);
   return (
     <>
-      <div className="h-4 w-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
-      <div className="flex flex-row">
-        <div className="px-4 py-2">
-          <LanguagesDropdown onSelectChange={onSelectChange} />
-        </div>
-        <div className="px-4 py-2">
-          <ThemeDropdown handleThemeChange={handleThemeChange} theme={theme} />
-        </div>
+      <div className="flex items-center px-2 py-0 space-x-2">
+        <LanguagesDropdown onSelectChange={onSelectChange} />
+        <ThemeDropdown handleThemeChange={handleThemeChange} theme={theme} />
+        <button
+          onClick={handleCompile}
+          disabled={!code}
+          className={classnames(
+            "border-2 border-blue-400 px-4 py-2 bg-blue-400 flex-shrink-0 rounded-full",
+            !code ? "opacity-0" : "opacity-100"
+          )}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 text-black"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M5 3l14 9-14 9V3z" />
+          </svg>
+        </button>
       </div>
       <div className="flex flex-row space-x-4 items-start px-4 py-4">
         <div className="flex flex-col w-full h-full justify-start items-end">
@@ -158,24 +174,12 @@ const Landing = () => {
             theme={theme.value}
           />
         </div>
-
         <div className="right-container flex flex-shrink-0 w-[30%] flex-col">
           <OutputWindow outputDetails={outputDetails} />
-          <div className="flex flex-col items-end">
-            <button
-              onClick={handleCompile}
-              disabled={!code}
-              className={classnames(
-                "mt-4 border-2 border-white px-4 py-2 bg-sky-200 flex-shrink-0",
-                !code ? "opacity-50" : ""
-              )}
-            >
-              {processing ? "Running" : "Run"}
-            </button>
-          </div>
           {outputDetails && <OutputDetails outputDetails={outputDetails} />}
         </div>
       </div>
+      <div className="h-4 w-full bg-gradient-to-r from-blue-400 to-blue-400"></div>
     </>
   );
 };

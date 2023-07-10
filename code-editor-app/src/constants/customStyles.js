@@ -8,7 +8,7 @@ export const customStyles = {
     color: "#000",
     fontSize: "0.8rem",
     lineHeight: "1.5rem",
-    backgroundColor: "#89CFF0", //color of the styles dropdown button
+    backgroundColor: "#42A5F5", //color of the styles dropdown button
     cursor: "pointer",
     border: "1px solid #FFFFF",
   }),

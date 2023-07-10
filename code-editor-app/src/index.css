@@ -21,18 +21,6 @@ body {
   background: #e2e8f0;
   cursor: pointer;
 }
-
-.github-corner svg {
-  position:absolute;
-  right:0;
-  top:0;
-  mix-blend-mode:darken;
-  color:#ffffff;
-  fill:#000000;
-}
-.github-corner:hover .octo-arm {
-  animation:octocat-wave .56s;
-}
 @keyframes octocat-wave {
   0%, 100% {
     transform:rotate(0);

@@ -1,7 +1,5 @@
 # Online Code Editor
 
-![Project Logo](Images/demo.png)
-
 A modern and user-friendly online code editor built with React and Tailwind CSS.
 
 ## Table of Contents

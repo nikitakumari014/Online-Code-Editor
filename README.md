@@ -1,3 +1,6 @@
 # Online-Code-Editor
 
-![Project Logo](logo.jpg)
+<p align="center">
+  <img src="logo.jpg" alt="Project Logo">
+</p>
+

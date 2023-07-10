@@ -1,8 +1,8 @@
 export const languageOptions = [
   {
-    id: 49,
-    name: "C (GCC 8.3.0)",
-    label: "C (GCC 8.3.0)",
+    id: 50,
+    name: "C (GCC 9.2.0)",
+    label: "C (GCC 9.2.0)",
     value: "c",
   },
   {
@@ -16,42 +16,6 @@ export const languageOptions = [
     name: "Bash (5.0.0)",
     label: "Bash (5.0.0)",
     value: "bash",
-  },
-  {
-    id: 75,
-    name: "C (Clang 7.0.1)",
-    label: "C (Clang 7.0.1)",
-    value: "c",
-  },
-  {
-    id: 76,
-    name: "C++ (Clang 7.0.1)",
-    label: "C++ (Clang 7.0.1)",
-    value: "cpp",
-  },
-  {
-    id: 48,
-    name: "C (GCC 7.4.0)",
-    label: "C (GCC 7.4.0)",
-    value: "c",
-  },
-  {
-    id: 52,
-    name: "C++ (GCC 7.4.0)",
-    label: "C++ (GCC 7.4.0)",
-    value: "cpp",
-  },
-  {
-    id: 53,
-    name: "C++ (GCC 8.3.0)",
-    label: "C++ (GCC 8.3.0)",
-    value: "cpp",
-  },
-  {
-    id: 50,
-    name: "C (GCC 9.2.0)",
-    label: "C (GCC 9.2.0)",
-    value: "c",
   },
   {
     id: 54,
@@ -70,12 +34,6 @@ export const languageOptions = [
     name: "COBOL (GnuCOBOL 2.2)",
     label: "COBOL (GnuCOBOL 2.2)",
     value: "cobol",
-  },
-  {
-    id: 55,
-    name: "Common Lisp (SBCL 2.0.0)",
-    label: "Common Lisp (SBCL 2.0.0)",
-    value: "lisp",
   },
   {
     id: 60,
@@ -103,24 +61,6 @@ export const languageOptions = [
     value: "lua",
   },
   {
-    id: 68,
-    name: "PHP (7.4.1)",
-    label: "PHP (7.4.1)",
-    value: "php",
-  },
-  {
-    id: 69,
-    name: "Prolog (GNU Prolog 1.4.5)",
-    label: "Prolog (GNU Prolog 1.4.5)",
-    value: "prolog",
-  },
-  {
-    id: 70,
-    name: "Python (2.7.17)",
-    label: "Python (2.7.17)",
-    value: "python",
-  },
-  {
     id: 71,
     name: "Python (3.8.1)",
     label: "Python (3.8.1)",
@@ -137,18 +77,6 @@ export const languageOptions = [
     name: "Ruby (2.7.0)",
     label: "Ruby (2.7.0)",
     value: "ruby",
-  },
-  {
-    id: 73,
-    name: "Rust (1.40.0)",
-    label: "Rust (1.40.0)",
-    value: "rust",
-  },
-  {
-    id: 82,
-    name: "SQL (SQLite 3.27.2)",
-    label: "SQL (SQLite 3.27.2)",
-    value: "sql",
   },
 ];
 //25 languages

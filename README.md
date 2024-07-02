@@ -23,7 +23,7 @@ The editor comes equipped with syntax highlighting, code autocompletion, and int
 
 ## Demo
 
-Check out the demo pictorial representation of the Online Code Editor [here](https://drive.google.com/file/d/13UhoAhlAO4Qe81x98In-DrPbE1DnVxOT/view?usp=drive_link).
+Check out the demo pictorial representation of the Online Code Editor [here](https://drive.google.com/file/d/1tmNhII-EFwlL1bsRlI-GWVxlJhY29nUG/view?usp=sharing).
 
 ## Installation and Setup
 
